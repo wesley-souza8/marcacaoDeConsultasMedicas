@@ -7,10 +7,11 @@ import { HeaderContainer, HeaderTitle } from '../components/Header';
 import theme from '../styles/theme';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Appointment } from '../types/appointments';
-import { RootStackParamList } from '../types/navigation';
-import { Doctor } from '../types/doctors';
 import { useFocusEffect } from '@react-navigation/native';
+
+import { Appointment } from '../types/appointments';
+import { Doctor } from '../types/doctors';
+import { RootStackParamList } from '../types/navigation';
 
 type HomeScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'Home'>;
